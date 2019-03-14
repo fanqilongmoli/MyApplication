@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Build;
-import android.os.IInterface;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.view.ViewCompat;
@@ -76,8 +75,8 @@ public class NotificationView extends FrameLayout implements Animation.Animation
     private void initView(Context context) {
         this.context = context;
 
-        enterAnimation = AnimationUtils.loadAnimation(context, R.anim.alerter_slide_in_from_top);
-        exitAnimation = AnimationUtils.loadAnimation(context, R.anim.alerter_slide_out_to_top);
+        enterAnimation = AnimationUtils.loadAnimation(context, R.anim.notification_slide_in_from_top);
+        exitAnimation = AnimationUtils.loadAnimation(context, R.anim.notification_slide_out_to_top);
 
         LayoutInflater.from(context).inflate(R.layout.layout_notification_view, this);
         llAlertBackground = findViewById(R.id.llAlertBackground);
