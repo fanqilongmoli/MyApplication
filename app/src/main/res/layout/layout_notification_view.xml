@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/flClickShield"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="@android:color/transparent"
     android:clickable="false">
 
@@ -34,7 +34,7 @@
 
 
                 <android.support.v7.widget.AppCompatTextView
-                    android:id="@+id/tvTitle"
+                    android:id="@+id/tv_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -43,24 +43,20 @@
                     android:paddingLeft="4dp"
                     android:paddingEnd="4dp"
                     android:singleLine="true"
+                    android:text="标题"
                     android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:visibility="gone"
-                    tools:text="Title"
-                    tools:visibility="visible" />
+                    android:textStyle="bold" />
 
                 <android.support.v7.widget.AppCompatTextView
-                    android:id="@+id/tvText"
+                    android:id="@+id/tv_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:maxLines="2"
                     android:padding="4dp"
-                    android:textSize="14sp"
-                    android:visibility="gone"
-                    tools:text="Text"
-                    tools:visibility="visible" />
+                    android:text="内容"
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
