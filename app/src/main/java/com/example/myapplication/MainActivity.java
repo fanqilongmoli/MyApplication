@@ -8,6 +8,7 @@ import android.widget.Toast;
 import com.example.myapplication.notification.NotificationView;
 import com.example.myapplication.notification.NotificationViewer;
 import com.example.myapplication.notification.OnNotifyClickListener;
+import com.example.myapplication.notification.WNotification;
 import com.example.myapplication.slidebar.WordsNavigation;
 
 public class MainActivity extends AppCompatActivity {
@@ -35,6 +36,31 @@ public class MainActivity extends AppCompatActivity {
                             }
                         })
                         .show();
+            }
+        });
+
+
+        final WNotification notification =
+                new WNotification.Builder().setContext(MainActivity.this)
+                        .setTime(System.currentTimeMillis())
+                        .setImgRes(R.drawable.ic_launcher_foreground)
+                        .setTitle("你收到了一条消息")
+                        .setContent("人丑就要多读书").build();
+
+
+        findViewById(R.id.btn_show_window).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                notification.show();
+
+            }
+        });
+
+        findViewById(R.id.btn_hide_window).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                notification.dismiss();
             }
         });
 

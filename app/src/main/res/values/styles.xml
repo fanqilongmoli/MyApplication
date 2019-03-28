@@ -9,4 +9,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="NotificationAnim">
+        <item name="android:windowEnterAnimation">@anim/notification_slide_in_from_top</item>
+        <item name="android:windowExitAnimation">@anim/notification_slide_out_to_top</item>
+    </style>
+
 </resources>
